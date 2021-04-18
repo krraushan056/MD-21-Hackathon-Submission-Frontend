@@ -1,0 +1,166 @@
+body {
+  background-color:  #E5E5E5;
+}
+
+
+.main {
+  margin-left: 160px; 
+  font-size: 28px; 
+  padding: 0px 10px;
+ 
+
+}
+.heading{
+    padding-left:24px;
+    font-family: Roboto;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:black;
+
+}
+
+.input1{
+ 
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: solid;
+
+        background-color: transparent;
+        padding:7px
+      }
+      
+      .no-outline:focus {
+        outline: none;
+      }
+
+      .input{
+          
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: solid;
+
+        background-color: transparent;
+        padding:7px
+      }
+
+    .add{
+        background-color:#1E5F74 ;
+        border-radius: 10px;
+        border:transparent;
+        width:50px;
+        height: 30px;
+        color:white
+    }
+
+    .cal{
+        padding:0;
+        margin:0;
+
+    }
+
+
+    .sidenav {
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #1E5F74;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+      
+      .sidenav a {
+        padding: 16px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+      }
+      
+      .sidenav a:hover {
+        background-color:  #133B5C;
+      }
+      
+      .main {
+        margin-left: 160px; /* Same as the width of the sidenav */
+        font-size: 28px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+      
+      .skill{
+          font-size: smaller;
+      }
+
+
+    
+
+
+
+.box1{
+
+
+        width: 80%;
+        border: none;
+        padding: 40px;
+        margin: 20px;
+        margin-bottom: 40px;
+        background-color: white;
+     
+}
+.span{
+    padding-right: 10px;
+    padding-left: 30px;
+    font-weight: lighter;
+    font-size: medium;
+
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: none;
+    text-align: left;
+    padding: 8px;
+
+  }
+  .head{
+      
+color:#1E5F74;
+font-family: Roboto;
+font-style: Regular;
+font-size: 16px;
+line-height: 19px;
+line-height: 100%;
+vertical-align: top;
+  }
+  .row{
+    font-family: Roboto;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 19px;
+    line-height: 100%;
+    vertical-align: top;
+    fill: Solid;
+   color: #000000
+  }
+
+  .search{
+      padding-left:20px;
+  }
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/home.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="sidenav">
+
+        <a><img src="subject_black_24dp.svg"> 1805235 </a>
+        <a href="/"><img src="home_black_24dp.svg">Home</a>
+        <a href="/about"><img src="face_black_24dp.svg">About</a>
+      </div>
+   
+   
+
+
+<div class="main">
+
+    <h3 class="heading">My Meeting</h3>
+
+    <div class="box1">
+        <form  action="/search" method="POST">
+            <img class="search" src ="search_black_24dp.svg"/>
+                <input class='input1' type="text" placeholder="Search.." name="search_name">
+       
+       
+        <span class="span">From:</span>
+       <input class='input1' type="date"  name="from" value="dd/mm/yyyy">
+       <img class="cal" src="calendar_today_black_24dp.svg">
+       <span class="span">To:</span>
+       <input  class='input1' type="date"  name="to" value="dd/mm/yyyy"/>
+       <img class="cal" src="calendar_today_black_24dp.svg">
+       </form>
+    </div>
+    <div class="box1">
+        
+<table>
+    <tr class="head">
+      <th>SI</th>
+      <th>Meeting Name</th>
+      <th>Meeting No</th>
+      <th>No of People Attending</th>
+      <th>Date</th>
+      <th>Start Time</th>
+      <th>End Time</th>
+      <th>Action</th>
+    </tr>
+    <% var i=0 %>
+    <% detail.forEach(function(detail){ %> 
+        <% i=i+1%>
+    <tr class="row">
+      <td><%=i%></td>
+      <td><%= detail.MettingName%></td>
+      <td><%= detail.MettingNo%></td>
+      <td><%= detail.NoOfPeople%></td>
+      <td><%= detail.Date%></td>
+      <td><%= detail.StartTime%></td>
+      <td><%= detail.EndTime%></td>
+      <td>
+        <form  action="/<%=detail._id%>?_method=DELETE" method="POST">
+            <button type="submit"><img src="delete_black_24dp.svg"></button>
+             </form>
+      </td>
+    </tr>
+    <%})%>
+   
+      <form action="/" method="POST">
+      <tr>
+        <td></td>
+        <td><input type="text" class='input' placeholder="MettingName" name="MettingName"></td>
+        <td><input type="text" class='input'  placeholder="MettingNo" name="MettingNo"></td>
+        <td><input type="text" class='input'  placeholder="NoOfPeople" name="NoOfPeople"></td>
+        <td> <input type="date" class='input1' name="Date" value="dd/mm/yy">
+            <img class="cal" src="calendar_today_black_24dp.svg"></td>
+        <td><input type="time" class='input1' name="StartTime">
+            <img class="cal" src="schedule_black_24dp.svg"></td>
+        
+        <td><input type="time" class='input1'  name="EndTime">
+            <img class="cal" src="schedule_black_24dp.svg"></td>
+        
+        <td><button type="submit" class="add">ADD</button></td>
+      </tr>
+    </form>
+   
+  </table>
+  
+ 
+</div>
+   
+</body>
+</html> 
